@@ -1,16 +1,15 @@
-from graphics import Cell, Line, Maze, Point, Window
+from graphics import Window
+from maze import Maze
+
 
 def main():
-  window = Window(800, 600)
-  # Draw the maze here
+    window = Window(800, 600)
+    # Draw the maze here
 
-  maze = Maze(
-    0, 0, 10, 10, 20, 20, window
-  )
+    maze = Maze(10, 10, 10, 10, 20, 20, window)
 
+    window.wait_for_close()
 
-  window.wait_for_close()
 
 if __name__ == "__main__":
-  main()
-
+    main()
